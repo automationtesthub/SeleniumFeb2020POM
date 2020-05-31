@@ -17,7 +17,11 @@ private WebDriver driver;
 		super(driver);
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
+		
 	}
+	
+	@FindBy(name = "description") 
+	WebElement txt_description;
 	
 	@FindBy(name = "salutationtype") 
 	WebElement lst_salutationtype;
