@@ -39,6 +39,7 @@ public class BaseTest {
 		DateFormat f = new SimpleDateFormat("ddMMyyyyhhmmss");
 		Date d = new Date();
 		String file = f.format(d);
+		System.out.println(file);
 		//String file = GenericMethods.getFileName();
 		htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir")+"/src/test/java/com/vtiger/reports/vtigerextentreport_"+file+".html");
 		System.out.println(htmlReporter);
